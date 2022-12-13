@@ -7,7 +7,7 @@ gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 gray = np.float32(gray) # cv2.goodFeaturesToTrack okuyabilmesi için
 corners = cv2.goodFeaturesToTrack(gray, 3, 0.01, 10)
-# 50: en fazla kaç köşe
+# 3: en fazla kaç köşe
 #0.01 : kalite standart
 #10 köşeler arası min mesafe
 
